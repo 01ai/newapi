@@ -105,8 +105,8 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/QuantumNous/new-api.git
-cd new-api
+git clone https://github.com/01ai/newapi.git
+cd newapi
 
 # 编辑 docker-compose.yml 配置
 nano docker-compose.yml
