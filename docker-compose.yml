@@ -2,7 +2,7 @@
 # 
 # Quick Start:
 #   1. docker-compose up -d
-#   2. Access at http://localhost:3000
+#   2. Access at http://localhost:3001
 #
 # Using MySQL instead of PostgreSQL:
 #   1. Comment out the postgres service and SQL_DSN line 15
@@ -16,12 +16,12 @@ version: '3.4' # For compatibility with older Docker versions
 
 services:
   new-api:
-    image: calciumion/new-api:latest
-    container_name: new-api
+    image: 01ai/newapi:latest
+    container_name: myapi
     restart: always
     command: --log-dir /app/logs
     ports:
-      - "3000:3000"
+      - "3001:3000"
     volumes:
       - ./data:/data
       - ./logs:/app/logs
